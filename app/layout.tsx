@@ -22,17 +22,15 @@ export async function generateMetadata(): Promise<Metadata> {
       "stochastic topology",
     ],
     openGraph: {
-      title: "Efe Onaran | Probability & Stochastic Topology",
-      description: "Probability at the meeting point of space, time, and shape.",
+      title: "Efe Onaran | Academic Website",
+      description: "Research, publications, teaching, and contact information for Efe Onaran.",
       type: "website",
       url: origin,
-      images: [{ url: `${origin}/og.png`, width: 1730, height: 909, alt: "Efe Onaran — probability, stochastic topology, and random geometry" }],
     },
     twitter: {
-      card: "summary_large_image",
-      title: "Efe Onaran | Probability & Stochastic Topology",
-      description: "Probability at the meeting point of space, time, and shape.",
-      images: [`${origin}/og.png`],
+      card: "summary",
+      title: "Efe Onaran | Academic Website",
+      description: "Research, publications, teaching, and contact information for Efe Onaran.",
     },
   };
 }

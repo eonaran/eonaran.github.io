@@ -32,16 +32,17 @@ test("server-renders the academic website and social metadata", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Efe Onaran \| Probability &amp; Stochastic Topology<\/title>/i);
-  assert.match(html, /I study structure/);
-  assert.match(html, /Seeking tenure-track faculty opportunities/);
-  assert.match(html, /Selected &amp; recent work/);
-  assert.match(html, /https:\/\/efe-onaran\.example\/og\.png/);
+  assert.match(html, /Hi! I am a visiting scholar/);
+  assert.match(html, /Seeking tenure-track faculty positions/);
+  assert.match(html, /Journal articles and preprints/);
+  assert.match(html, /efe-onaran-google\.jpg/);
+  assert.doesNotMatch(html, /https:\/\/efe-onaran\.example\/og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
 });
 
 test("ships the portrait, CV, and social card without starter assets", async () => {
   await Promise.all([
-    access(new URL("public/efe-onaran.jpg", projectRoot)),
+    access(new URL("public/efe-onaran-google.jpg", projectRoot)),
     access(new URL("public/efe-onaran-cv.pdf", projectRoot)),
     access(new URL("public/og.png", projectRoot)),
   ]);
