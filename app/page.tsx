@@ -157,8 +157,15 @@ export default function Home() {
             <li><span>2024</span><p>Koç University Mathematics Seminar</p></li>
             <li><span>2023</span><p>UIUC Probability Seminar</p></li>
             <li><span>2022</span><p>Random Structures and Algorithms, Gniezno</p></li>
+            <li><span>2022</span><p>Queen Mary University of London Probability and Applications Seminar</p></li>
+            <li><span>2022</span><p>Technion Probability Seminar</p></li>
+            <li><span>2022</span><p>Purdue University Probability Seminar</p></li>
           </ul>
-          <p><a href="https://sites.google.com/view/efeonaran/videos-etc" target="_blank" rel="noreferrer">Videos and additional materials</a></p>
+          <h3>Slides</h3>
+          <ul className="education-list">
+            <li><a href="https://drive.google.com/file/d/1KUxBj4b5wwgq4g_qNEP7EkFYSdZRnK6S/view" target="_blank" rel="noreferrer">Penn / Temple Probability Seminar (2024)</a></li>
+            <li><a href="https://drive.google.com/file/d/12mhQ95SX7kalvfTomk0TNndG794N7xB7/view" target="_blank" rel="noreferrer">Random Structures and Algorithms (2022)</a></li>
+          </ul>
         </section>
 
         <section className="content-section" id="teaching">
