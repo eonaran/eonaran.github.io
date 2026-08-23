@@ -54,6 +54,9 @@ nav a { color: #444; font-size: .88rem; }
 .dated-list li { display: grid; grid-template-columns: 68px 1fr; padding: 10px 0; border-bottom: 1px solid #eee; }
 .dated-list li span { color: var(--muted); font-size: .9rem; }
 .dated-list li p { margin: 0; }
+.featured-slides > p:first-child { margin: 0 0 16px; }
+.slides-embed { display: block; width: 100%; height: min(72vw, 680px); min-height: 430px; border: 1px solid var(--line); background: #f5f5f5; }
+.slides-actions { margin: 10px 0 0; font-size: .92rem; }
 .teaching-list li { display: flex; flex-direction: column; padding: 13px 0; border-bottom: 1px solid #eee; }
 .teaching-list span { color: var(--muted); font-size: .9rem; }
 .teaching-list + p { margin-top: 24px; }
@@ -81,6 +84,7 @@ a:focus-visible { outline: 2px solid #b36b00; outline-offset: 3px; }
   .home { grid-template-columns: 1fr; }
   .portrait-column { width: 170px; }
   .bio h1 { margin-top: 0; }
+  .slides-embed { height: 68vh; min-height: 360px; }
   .contact-grid { grid-template-columns: 1fr; gap: 24px; }
 }
 

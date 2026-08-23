@@ -151,6 +151,7 @@ export default function Home() {
         <section className="content-section" id="talks">
           <h2>Talks</h2>
           <ul className="dated-list">
+            <li><span>2026</span><p>AFOSR Dynamical Systems and Control Theory Review</p></li>
             <li><span>2024</span><p>Penn / Temple Probability Seminar</p></li>
             <li><span>2024</span><p>Bernoulli–IMS 11th World Congress in Probability and Statistics, Bochum</p></li>
             <li><span>2024</span><p>CRM–PIMS Summer School in Probability, Montréal</p></li>
@@ -161,7 +162,20 @@ export default function Home() {
             <li><span>2022</span><p>Technion Probability Seminar</p></li>
             <li><span>2022</span><p>Purdue University Probability Seminar</p></li>
           </ul>
-          <h3>Slides</h3>
+
+          <h3>AFOSR talk slides</h3>
+          <div className="featured-slides">
+            <p><strong>Ising Disks: Topology Preserving Glauber Dynamics</strong><br />2026 AFOSR Dynamical Systems and Control Theory Review · August 3, 2026</p>
+            <iframe
+              className="slides-embed"
+              src="/afosr-ising-disks-talk.pdf#view=FitH"
+              title="AFOSR talk slides: Ising Disks"
+              loading="lazy"
+            />
+            <p className="slides-actions"><a href="/afosr-ising-disks-talk.pdf" target="_blank" rel="noreferrer">Open or download the PDF</a></p>
+          </div>
+
+          <h3>Additional slides</h3>
           <ul className="education-list">
             <li><a href="https://drive.google.com/file/d/1KUxBj4b5wwgq4g_qNEP7EkFYSdZRnK6S/view" target="_blank" rel="noreferrer">Penn / Temple Probability Seminar (2024)</a></li>
             <li><a href="https://drive.google.com/file/d/12mhQ95SX7kalvfTomk0TNndG794N7xB7/view" target="_blank" rel="noreferrer">Random Structures and Algorithms (2022)</a></li>
