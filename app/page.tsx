@@ -86,7 +86,6 @@ export default function Home() {
           <div className="portrait-column">
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img src="/efe-onaran-google.jpg" alt="Efe Onaran" />
-            <p className="availability">Seeking tenure-track faculty positions</p>
           </div>
 
           <div className="bio">
