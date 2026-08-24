@@ -164,22 +164,11 @@ export default function Home() {
             <li><span>2022</span><p>Purdue University Probability Seminar</p></li>
           </ul>
 
-          <h3>Featured slides</h3>
-          <div className="featured-slides">
-            <p><strong>Ising Disks: Topology Preserving Glauber Dynamics</strong></p>
-            <iframe
-              className="slides-embed"
-              src="/afosr-ising-disks-talk.pdf#view=FitH"
-              title="Ising Disks: Topology Preserving Glauber Dynamics slides"
-              loading="lazy"
-            />
-            <p className="slides-actions"><a href="/afosr-ising-disks-talk.pdf" target="_blank" rel="noreferrer">Open or download the PDF</a></p>
-          </div>
-
-          <h3>Additional slides</h3>
+          <h3>Slides</h3>
           <ul className="education-list">
-            <li><a href="/penn-temple-probability-seminar-2024.pdf" target="_blank" rel="noreferrer">Functional Central Limit Theorems for Dynamic Point Processes</a></li>
-            <li><a href="/random-structures-algorithms-2022.pdf" target="_blank" rel="noreferrer">Functional Central Limit Theorems for Local Statistics of Spatial Birth-Death Processes in the Thermodynamic Regime</a></li>
+            <li><a href="/afosr-ising-disks-talk.pdf" target="_blank" rel="noreferrer">Ising Disks: Topology Preserving Glauber Dynamics</a></li>
+            <li><a href="/penn-temple-probability-seminar-2024.pdf" target="_blank" rel="noreferrer">Central Limit Theorems for Local Functionals of Dynamic Point Processes</a></li>
+            <li><a href="/random-structures-algorithms-2022.pdf" target="_blank" rel="noreferrer">FCLTs for Local Statistics of Spatial Birth-Death Processes in the Thermodynamic Regime</a></li>
           </ul>
         </section>
 
