@@ -100,8 +100,10 @@ export default function Home() {
               Previously, I was a postdoctoral research associate at the Coordinated
               Science Laboratory of the University of Illinois Urbana–Champaign,
               hosted by <a href="https://ymb.web.illinois.edu/" target="_blank" rel="noreferrer">Yuliy Baryshnikov</a>,
-              and a postdoctoral fellow at the Technion, hosted by Omer Bobrowski and
-              Robert J. Adler.
+              and a postdoctoral fellow at the Technion, hosted by{" "}
+              <a href="https://sites.google.com/site/omerbobrowski" target="_blank" rel="noreferrer">Omer Bobrowski</a>
+              {" "}and{" "}
+              <a href="https://robert.net.technion.ac.il/" target="_blank" rel="noreferrer">Robert J. Adler</a>.
             </p>
             <p>
               My research interests broadly span probability theory and stochastic
