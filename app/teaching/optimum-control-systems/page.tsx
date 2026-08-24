@@ -3,6 +3,9 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Optimum Control Systems | Efe Onaran",
   description: "Course information and syllabus for ECE 553 / MATH 595 at the University of Illinois Urbana–Champaign.",
+  alternates: {
+    canonical: "/teaching/optimum-control-systems/",
+  },
 };
 
 export default function OptimumControlSystemsPage() {

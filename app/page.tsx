@@ -86,9 +86,44 @@ const conferencePapers = [
   ],
 ] as const;
 
+const profileStructuredData = {
+  "@context": "https://schema.org",
+  "@type": "ProfilePage",
+  "@id": "https://eonaran.github.io/#profile",
+  url: "https://eonaran.github.io/",
+  name: "Efe Onaran",
+  mainEntity: {
+    "@type": "Person",
+    "@id": "https://eonaran.github.io/#efe-onaran",
+    name: "Efe Onaran",
+    url: "https://eonaran.github.io/",
+    image: "https://eonaran.github.io/efe-onaran-google.jpg",
+    jobTitle: "Visiting Scholar and Postdoctoral Researcher",
+    affiliation: {
+      "@type": "Organization",
+      name: "University of Pennsylvania",
+      url: "https://www.upenn.edu/",
+    },
+    sameAs: [
+      "https://scholar.google.com/citations?hl=en&oi=ao&user=Y-3aeCUAAAAJ",
+      "https://engineering.nyu.edu/efe-onaran",
+    ],
+    knowsAbout: [
+      "Probability theory",
+      "Stochastic processes",
+      "Random geometric graphs",
+      "Stochastic topology",
+    ],
+  },
+};
+
 export default function Home() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(profileStructuredData) }}
+      />
       <a className="skip-link" href="#content">Skip to content</a>
 
       <header className="site-header">

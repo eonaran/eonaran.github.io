@@ -32,6 +32,10 @@ test("server-renders the academic website and social metadata", async () => {
 
   const html = await response.text();
   assert.match(html, /<title>Efe Onaran<\/title>/i);
+  assert.match(html, /<link rel="canonical" href="https:\/\/eonaran\.github\.io\/"/i);
+  assert.match(html, /"@type":"ProfilePage"/);
+  assert.match(html, /"@type":"Person"/);
+  assert.match(html, /https:\/\/eonaran\.github\.io\/#efe-onaran/);
   assert.match(html, /Hi! I am a visiting scholar/);
   assert.match(html, /Journal articles and preprints/);
   assert.match(html, /IEEE International Conference on Acoustics, Speech and Signal Processing/);
