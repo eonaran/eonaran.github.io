@@ -177,8 +177,8 @@ export default function Home() {
 
           <h3>Additional slides</h3>
           <ul className="education-list">
-            <li><a href="https://drive.google.com/file/d/1KUxBj4b5wwgq4g_qNEP7EkFYSdZRnK6S/view" target="_blank" rel="noreferrer">Penn / Temple Probability Seminar (2024)</a></li>
-            <li><a href="https://drive.google.com/file/d/12mhQ95SX7kalvfTomk0TNndG794N7xB7/view" target="_blank" rel="noreferrer">Random Structures and Algorithms (2022)</a></li>
+            <li><a href="/penn-temple-probability-seminar-2024.pdf" target="_blank" rel="noreferrer">Penn / Temple Probability Seminar (2024)</a></li>
+            <li><a href="/random-structures-algorithms-2022.pdf" target="_blank" rel="noreferrer">Random Structures and Algorithms (2022)</a></li>
           </ul>
         </section>
 
