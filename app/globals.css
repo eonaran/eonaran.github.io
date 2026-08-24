@@ -65,8 +65,9 @@ nav a { color: #444; font-size: .88rem; }
 .teaching-list li { display: flex; flex-direction: column; padding: 13px 0; border-bottom: 1px solid #eee; }
 .teaching-list span { color: var(--muted); font-size: .9rem; }
 
-.research-video-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; margin-top: 30px; }
+.research-video-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 32px 24px; margin-top: 30px; }
 .research-video-grid figure { margin: 0; }
+.research-video-grid figure:last-child { grid-column: 1 / -1; width: calc(50% - 12px); justify-self: center; }
 .research-video-grid video { display: block; width: 100%; aspect-ratio: 16 / 10; background: #f2f2f2; object-fit: contain; }
 .research-video-grid figcaption { margin-top: 10px; color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .research-video-grid figcaption strong { color: var(--text); }
@@ -100,6 +101,7 @@ a:focus-visible { outline: 2px solid #b36b00; outline-offset: 3px; }
   .bio h1 { font-size: 2.1rem; }
   .portrait-column { grid-row: 1; }
   .research-video-grid { grid-template-columns: 1fr; gap: 30px; }
+  .research-video-grid figure:last-child { grid-column: auto; width: 100%; }
   .course-page { padding-top: 42px; }
 }
 
