@@ -166,9 +166,9 @@ export default function Home() {
 
           <h3>Slides</h3>
           <ul className="education-list">
-            <li><a href="/afosr-ising-disks-talk.pdf" target="_blank" rel="noreferrer">Ising Disks: Topology Preserving Glauber Dynamics</a></li>
-            <li><a href="/penn-temple-probability-seminar-2024.pdf" target="_blank" rel="noreferrer">Central Limit Theorems for Local Functionals of Dynamic Point Processes</a></li>
-            <li><a href="/random-structures-algorithms-2022.pdf" target="_blank" rel="noreferrer">FCLTs for Local Statistics of Spatial Birth-Death Processes in the Thermodynamic Regime</a></li>
+            <li><a href="/ising-disks-topology-preserving-glauber-dynamics.pdf" target="_blank" rel="noreferrer">Ising Disks: Topology Preserving Glauber Dynamics</a></li>
+            <li><a href="/central-limit-theorems-for-local-functionals-of-dynamic-point-processes.pdf" target="_blank" rel="noreferrer">Central Limit Theorems for Local Functionals of Dynamic Point Processes</a></li>
+            <li><a href="/fclts-for-local-statistics-of-spatial-birth-death-processes-in-the-thermodynamic-regime.pdf" target="_blank" rel="noreferrer">FCLTs for Local Statistics of Spatial Birth-Death Processes in the Thermodynamic Regime</a></li>
           </ul>
         </section>
 
