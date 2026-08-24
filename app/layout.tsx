@@ -10,7 +10,7 @@ export async function generateMetadata(): Promise<Metadata> {
 
   return {
     metadataBase: new URL(origin),
-    title: "Efe Onaran | Probability & Stochastic Topology",
+    title: "Efe Onaran",
     description:
       "Academic website of Efe Onaran, a probabilist working on stochastic processes, random geometric graphs, and stochastic topology.",
     authors: [{ name: "Efe Onaran" }],
@@ -22,14 +22,14 @@ export async function generateMetadata(): Promise<Metadata> {
       "stochastic topology",
     ],
     openGraph: {
-      title: "Efe Onaran | Academic Website",
+      title: "Efe Onaran",
       description: "Research, publications, teaching, and contact information for Efe Onaran.",
       type: "website",
       url: origin,
     },
     twitter: {
       card: "summary",
-      title: "Efe Onaran | Academic Website",
+      title: "Efe Onaran",
       description: "Research, publications, teaching, and contact information for Efe Onaran.",
     },
   };
