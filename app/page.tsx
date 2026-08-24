@@ -191,7 +191,7 @@ export default function Home() {
           <h2>Contact</h2>
           <div className="contact-grid">
             <p><strong>Email</strong><a href="mailto:eonaran@seas.upenn.edu">eonaran@seas.upenn.edu</a><a href="mailto:efeonaran@gmail.com">efeonaran@gmail.com</a></p>
-            <p><strong>Office</strong>David Rittenhouse Laboratory, 4N40<br />209 South 33rd Street<br />Philadelphia, PA 19104</p>
+            <p><strong>Office</strong>David Rittenhouse Laboratory, 4N55<br />209 South 33rd Street<br />Philadelphia, PA 19104</p>
           </div>
         </section>
       </main>
