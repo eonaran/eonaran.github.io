@@ -56,10 +56,34 @@ const journalPapers = [
 ] as const;
 
 const conferencePapers = [
-  ["2020", "Efficient belief propagation for graph matching", "Efe Onaran and Soledad Villar", "https://ieeexplore.ieee.org/abstract/document/9053147"],
-  ["2017", "Projected power iteration for network alignment", "Efe Onaran and Soledad Villar", "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10394/103941C/Projected-power-iteration-for-network-alignment/10.1117/12.2275366.full"],
-  ["2016", "Optimal de-anonymization in random graphs with community structure", "Efe Onaran, Siddharth Garg, and Elza Erkip", "https://ieeexplore.ieee.org/abstract/document/7869137/"],
-  ["2013", "Broadcast erasure channel with feedback: The two multicast case—algorithms and bounds", "Efe Onaran, Marios Gatzianas, and Christina Fragouli", "https://ieeexplore.ieee.org/abstract/document/6570818/"],
+  [
+    "2020",
+    "Efficient belief propagation for graph matching",
+    "Efe Onaran and Soledad Villar",
+    "IEEE International Conference on Acoustics, Speech and Signal Processing (ICASSP)",
+    "https://ieeexplore.ieee.org/abstract/document/9053147",
+  ],
+  [
+    "2017",
+    "Projected power iteration for network alignment",
+    "Efe Onaran and Soledad Villar",
+    "Wavelets and Sparsity XVII",
+    "https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10394/103941C/Projected-power-iteration-for-network-alignment/10.1117/12.2275366.full",
+  ],
+  [
+    "2016",
+    "Optimal de-anonymization in random graphs with community structure",
+    "Efe Onaran, Siddharth Garg, and Elza Erkip",
+    "50th Asilomar Conference on Signals, Systems and Computers",
+    "https://ieeexplore.ieee.org/abstract/document/7869137/",
+  ],
+  [
+    "2013",
+    "Broadcast erasure channel with feedback: The two multicast case—algorithms and bounds",
+    "Efe Onaran, Marios Gatzianas, and Christina Fragouli",
+    "International Symposium on Network Coding (NetCod)",
+    "https://ieeexplore.ieee.org/abstract/document/6570818/",
+  ],
 ] as const;
 
 export default function Home() {
@@ -75,6 +99,7 @@ export default function Home() {
             <a href="/efe-onaran-cv.pdf" target="_blank" rel="noreferrer">CV</a>
             <a href="#papers">Papers</a>
             <a href="#talks">Talks</a>
+            <a href="#research">Research</a>
             <a href="#teaching">Teaching</a>
             <a href="#contact">Contact</a>
           </nav>
@@ -141,9 +166,10 @@ export default function Home() {
 
           <h3>Conference papers</h3>
           <ol className="publication-list compact-list">
-            {conferencePapers.map(([year, title, authors, href]) => (
+            {conferencePapers.map(([year, title, authors, conference, href]) => (
               <li key={title}>
                 <p><a href={href} target="_blank" rel="noreferrer"><strong>{title}.</strong></a> {authors}. ({year}).</p>
+                <p><em>{conference}</em>.</p>
               </li>
             ))}
           </ol>
@@ -172,19 +198,89 @@ export default function Home() {
           </ul>
         </section>
 
+        <section className="content-section" id="research">
+          <h2>Research</h2>
+          <p>
+            In the paper <a href="https://doi.org/10.1007/s41468-026-00248-w" target="_blank" rel="noreferrer"><em>Ising disks: topology preserving Glauber dynamics</em></a>,
+            written with <a href="https://ymb.web.illinois.edu/" target="_blank" rel="noreferrer">Yuliy Baryshnikov</a>,
+            we introduced a Glauber dynamics on a subset of contractible cubical
+            complexes that we call <em>clumps</em>. See <a href="https://mathoverflow.net/questions/50966/pachs-animals-what-if-the-genus-is-positive" target="_blank" rel="noreferrer">Pach&apos;s animals</a> for
+            a related definition. In the planar case, the state space is equivalent
+            to the set of <a href="https://math.berkeley.edu/~alanmh/papers/ThetaBound.pdf" target="_blank" rel="noreferrer">self-avoiding polygons</a>.
+          </p>
+
+          <div className="research-video-grid">
+            <figure>
+              <video controls playsInline preload="metadata">
+                <source src="/ising-disks-supercritical-ball-growth.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                <strong>Supercritical ball-like growth.</strong> When the birth-to-death
+                ratio is high, the clump grows indefinitely and looks approximately
+                like a ball, apart from some cracks.
+              </figcaption>
+            </figure>
+            <figure>
+              <video controls playsInline preload="metadata">
+                <source src="/ising-disks-above-critical-branching-growth.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                <strong>Above-critical branching growth.</strong> At a smaller but still
+                supercritical birth-to-death ratio, the clump continues to grow
+                indefinitely but develops a more branched shape.
+              </figcaption>
+            </figure>
+            <figure>
+              <video controls playsInline preload="metadata">
+                <source src="/ising-disks-below-critical-bounded.mp4" type="video/mp4" />
+              </video>
+              <figcaption>
+                <strong>Below-critical bounded growth.</strong> When the growth rate is
+                below the critical value, the clump remains bounded and the Markov
+                chain is ergodic.
+              </figcaption>
+            </figure>
+          </div>
+        </section>
+
         <section className="content-section" id="teaching">
           <h2>Teaching</h2>
+          <h3 className="institution-heading">University of Pennsylvania</h3>
           <ul className="teaching-list">
-            <li><strong>Mathematics of Change, Part II</strong><span>Instructor, University of Pennsylvania · Fall 2025</span></li>
-            <li><strong>Advanced Applied Probability</strong><span>Co-instructor with Robin Pemantle, University of Pennsylvania · Spring 2025</span></li>
-            <li><strong>Mathematics of Change, Part II</strong><span>Co-instructor with Robin Pemantle, University of Pennsylvania · Fall 2024</span></li>
-            <li><strong>Optimum Control Systems</strong><span>Instructor, University of Illinois Urbana–Champaign · Spring 2024</span></li>
+            <li><strong>Mathematics of Change, Part II (MATH 1080)</strong><span>Instructor · Fall 2025</span></li>
+            <li><strong>Advanced Applied Probability (MATH 5460)</strong><span>Co-instructor with Robin Pemantle · Spring 2025</span></li>
+            <li><strong>Mathematics of Change, Part II (MATH 1080)</strong><span>Co-instructor with Robin Pemantle · Fall 2024</span></li>
           </ul>
-          <p>
-            Previous teaching at NYU includes probability, statistics, signal
-            processing, optimization, machine learning, and mathematical tools for
-            data science.
-          </p>
+
+          <h3 className="institution-heading">University of Illinois Urbana–Champaign</h3>
+          <ul className="teaching-list">
+            <li>
+              <strong>Optimum Control Systems (ECE 553, MATH 595)</strong>
+              <span>Instructor · Spring 2024 · <a href="/teaching/optimum-control-systems">Course information and syllabus</a></span>
+            </li>
+          </ul>
+
+          <h3 className="institution-heading">New York University</h3>
+          <h4>Head teaching assistant</h4>
+          <ul className="teaching-list">
+            <li><strong>Applied Statistics</strong><span>Undergraduate, Tandon School of Engineering Mathematics · Spring 2020</span></li>
+            <li><strong>Probability Theory</strong><span>Undergraduate, Tandon School of Engineering Mathematics · Fall 2019</span></li>
+            <li><strong>Probability and Stochastic Processes</strong><span>Graduate, Tandon School of Engineering Electrical and Computer Engineering · Spring 2016</span></li>
+            <li><strong>Signal Processing</strong><span>Undergraduate, Tandon School of Engineering Electrical and Computer Engineering · Fall 2015</span></li>
+          </ul>
+
+          <h4>Grader</h4>
+          <ul className="teaching-list">
+            <li><strong>Mathematical Tools for Data Science</strong><span>Graduate, Courant Institute and Center for Data Science · Fall 2019</span></li>
+            <li><strong>Inference and Representation</strong><span>Graduate, Courant Institute and Center for Data Science · Spring 2019</span></li>
+            <li><strong>Optimization and Computational Linear Algebra</strong><span>Graduate, Courant Institute and Center for Data Science · Fall 2018</span></li>
+            <li><strong>Machine Learning</strong><span>Graduate, Tandon School of Engineering Electrical and Computer Engineering · Fall 2017</span></li>
+          </ul>
+
+          <h3 className="institution-heading">Tutoring</h3>
+          <ul className="teaching-list">
+            <li><strong>High school mathematics for Regents Exams</strong><span>Tutor, Opportunity Charter School, New York · Summer 2019</span></li>
+          </ul>
         </section>
 
         <section className="content-section" id="contact">
