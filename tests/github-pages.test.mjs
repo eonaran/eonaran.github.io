@@ -52,6 +52,7 @@ test("creates a complete GitHub Pages artifact", async () => {
     access(new URL(".nojekyll", siteRoot)),
     access(new URL("robots.txt", siteRoot)),
     access(new URL("sitemap.xml", siteRoot)),
+    access(new URL("google4036397ec2ab81a9.html", siteRoot)),
     access(new URL("efe-onaran-cv.pdf", siteRoot)),
     access(new URL("ising-disks-topology-preserving-glauber-dynamics.pdf", siteRoot)),
     access(new URL("optimum-control-systems-syllabus.pdf", siteRoot)),
@@ -59,8 +60,16 @@ test("creates a complete GitHub Pages artifact", async () => {
 
   const robots = await readFile(new URL("robots.txt", siteRoot), "utf8");
   const sitemap = await readFile(new URL("sitemap.xml", siteRoot), "utf8");
+  const verification = await readFile(
+    new URL("google4036397ec2ab81a9.html", siteRoot),
+    "utf8",
+  );
   assert.match(robots, /Sitemap: https:\/\/eonaran\.github\.io\/sitemap\.xml/);
   assert.match(sitemap, /<loc>https:\/\/eonaran\.github\.io\/<\/loc>/);
+  assert.equal(
+    verification.trim(),
+    "google-site-verification: google4036397ec2ab81a9.html",
+  );
 });
 
 test("all local links and media references resolve inside the static site", async () => {
