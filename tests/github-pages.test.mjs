@@ -93,3 +93,19 @@ test("all local links and media references resolve inside the static site", asyn
     }
   }
 });
+
+test("keeps manual scrolling available after fragment navigation", async () => {
+  const homeHtml = await readFile(new URL("index.html", siteRoot), "utf8");
+  const stylesheetPaths = [...homeHtml.matchAll(/<link[^>]+rel="stylesheet"[^>]+href="([^"]+)"/gi)]
+    .map((match) => match[1]);
+
+  assert.ok(stylesheetPaths.length > 0, "Expected at least one generated stylesheet");
+
+  const stylesheets = await Promise.all(
+    stylesheetPaths.map((path) => readFile(new URL(path.replace(/^\/+/, ""), siteRoot), "utf8")),
+  );
+  const css = stylesheets.join("\n");
+
+  assert.match(css, /scroll-behavior:auto/);
+  assert.doesNotMatch(css, /scroll-behavior:smooth/);
+});
