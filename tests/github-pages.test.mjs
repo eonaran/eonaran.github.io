@@ -1,5 +1,5 @@
 import assert from "node:assert/strict";
-import { access, readFile, stat } from "node:fs/promises";
+import { access, readFile, readdir, stat } from "node:fs/promises";
 import test from "node:test";
 
 const siteRoot = new URL("../dist/client/", import.meta.url);
@@ -108,4 +108,13 @@ test("keeps manual scrolling available after fragment navigation", async () => {
 
   assert.match(css, /scroll-behavior:auto/);
   assert.doesNotMatch(css, /scroll-behavior:smooth/);
+
+  const assetNames = await readdir(new URL("assets/", siteRoot));
+  const navigationAsset = assetNames.find((name) => name.startsWith("section-navigation-") && name.endsWith(".js"));
+  assert.ok(navigationAsset, "Expected a generated section-navigation script");
+
+  const navigationScript = await readFile(new URL(`assets/${navigationAsset}`, siteRoot), "utf8");
+  assert.match(navigationScript, /preventDefault/);
+  assert.match(navigationScript, /scrollIntoView/);
+  assert.match(navigationScript, /history\.pushState/);
 });

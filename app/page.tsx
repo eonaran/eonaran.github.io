@@ -1,3 +1,5 @@
+import { SectionNavigation } from "./section-navigation";
+
 const journalPapers = [
   {
     year: "2026",
@@ -126,20 +128,7 @@ export default function Home() {
       />
       <a className="skip-link" href="#content">Skip to content</a>
 
-      <header className="site-header">
-        <div className="header-inner">
-          <a className="site-name" href="#home">Efe Onaran</a>
-          <nav aria-label="Main navigation">
-            <a href="#home">Home</a>
-            <a href="/efe-onaran-cv.pdf" target="_blank" rel="noreferrer">CV</a>
-            <a href="#papers">Papers</a>
-            <a href="#talks">Talks</a>
-            <a href="#research">Research</a>
-            <a href="#teaching">Teaching</a>
-            <a href="#contact">Contact</a>
-          </nav>
-        </div>
-      </header>
+      <SectionNavigation />
 
       <main id="content" className="page-shell">
         <section className="home" id="home">
