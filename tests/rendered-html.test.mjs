@@ -43,6 +43,7 @@ test("server-renders the academic website and social metadata", async () => {
   assert.match(html, /Mathematics of Change, Part II \(MATH 1080\)/);
   assert.match(html, /Optimum Control Systems \(ECE 553, MATH 595\)/);
   assert.match(html, /Course information and syllabus/);
+  assert.match(html, /For embedded videos, download and open in Adobe Acrobat Reader in full-screen mode/);
   assert.match(html, /Inference and Representation/);
   assert.match(html, /Opportunity Charter School/);
   assert.match(html, /efe-onaran-google\.jpg/);
