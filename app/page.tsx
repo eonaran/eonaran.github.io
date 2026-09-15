@@ -100,7 +100,7 @@ const profileStructuredData = {
     name: "Efe Onaran",
     url: "https://eonaran.github.io/",
     image: "https://eonaran.github.io/efe-onaran-google.jpg",
-    jobTitle: "Visiting Scholar and Postdoctoral Researcher",
+    jobTitle: "Postdoctoral Researcher",
     affiliation: {
       "@type": "Organization",
       name: "University of Pennsylvania",
@@ -140,9 +140,10 @@ export default function Home() {
           <div className="bio">
             <h1>Efe Onaran</h1>
             <p>
-              Hi! I am a visiting scholar in the Department of Mathematics and a
-              postdoctoral researcher in the Department of Electrical and Systems
-              Engineering at the University of Pennsylvania.
+              Hi! I am a postdoctoral researcher in the Department of Electrical and
+              Systems Engineering at the University of Pennsylvania. From 2024 to 2026,
+              I was also a visiting scholar in the Department of Mathematics, where I
+              taught courses in 2024 and 2025.
             </p>
             <p>
               Previously, I was a postdoctoral research associate at the Coordinated
@@ -314,7 +315,7 @@ export default function Home() {
           <h2>Contact</h2>
           <div className="contact-grid">
             <p><strong>Email</strong><a href="mailto:eonaran@seas.upenn.edu">eonaran@seas.upenn.edu</a><a href="mailto:efeonaran@gmail.com">efeonaran@gmail.com</a></p>
-            <p><strong>Office</strong>David Rittenhouse Laboratory, 4N55<br />209 South 33rd Street<br />Philadelphia, PA 19104</p>
+            <p><strong>Affiliation</strong>University of Pennsylvania<br />Philadelphia, PA</p>
           </div>
         </section>
       </main>

@@ -36,7 +36,11 @@ test("server-renders the academic website and social metadata", async () => {
   assert.match(html, /"@type":"ProfilePage"/);
   assert.match(html, /"@type":"Person"/);
   assert.match(html, /https:\/\/eonaran\.github\.io\/#efe-onaran/);
-  assert.match(html, /Hi! I am a visiting scholar/);
+  assert.match(html, /Hi! I am a postdoctoral researcher/);
+  assert.match(html, /visiting scholar in the Department of Mathematics, where I/);
+  assert.match(html, /taught courses in 2024 and 2025/);
+  assert.match(html, /"jobTitle":"Postdoctoral Researcher"/);
+  assert.doesNotMatch(html, /Visiting Scholar and Postdoctoral Researcher/);
   assert.match(html, /Journal articles and preprints/);
   assert.match(html, /IEEE International Conference on Acoustics, Speech and Signal Processing/);
   assert.match(html, /Supercritical ball-like growth/);
@@ -46,6 +50,8 @@ test("server-renders the academic website and social metadata", async () => {
   assert.match(html, /For embedded videos, download and open in Adobe Acrobat Reader in full-screen mode/);
   assert.match(html, /Inference and Representation/);
   assert.match(html, /Opportunity Charter School/);
+  assert.match(html, /<strong>Affiliation<\/strong>University of Pennsylvania/);
+  assert.doesNotMatch(html, /David Rittenhouse Laboratory|4N55|209 South 33rd Street/);
   assert.match(html, /efe-onaran-google\.jpg/);
   assert.doesNotMatch(html, /https:\/\/efe-onaran\.example\/og\.png/);
   assert.doesNotMatch(html, /codex-preview|Your site is taking shape|react-loading-skeleton/i);
