@@ -203,6 +203,7 @@ export default function Home() {
         <section className="content-section" id="talks">
           <h2>Talks</h2>
           <ul className="dated-list">
+            <li><span>2026</span><p>Rutgers University, Applied and Computational Math Seminar</p></li>
             <li><span>2026</span><p>AFOSR Dynamical Systems and Control Theory Review</p></li>
             <li><span>2024</span><p>Penn / Temple Probability Seminar</p></li>
             <li><span>2024</span><p>Bernoulli–IMS 11th World Congress in Probability and Statistics, Bochum</p></li>
