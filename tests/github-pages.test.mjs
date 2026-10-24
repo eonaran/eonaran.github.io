@@ -45,6 +45,8 @@ test("creates a complete GitHub Pages artifact", async () => {
   assert.match(homeHtml, /<link rel="canonical" href="https:\/\/eonaran\.github\.io\/"/i);
   assert.match(homeHtml, /"@type":"ProfilePage"/);
   assert.match(homeHtml, /Research, publications, teaching, and contact information/);
+  assert.match(homeHtml, /Joint Mathematics Meetings, Chicago — January 12/);
+  assert.match(homeHtml, /<span>2027<\/span><p>Joint Mathematics Meetings, Chicago — January 12<\/p>/);
   assert.match(courseHtml, /<title>Optimum Control Systems \| Efe Onaran<\/title>/i);
   assert.match(courseHtml, /<link rel="canonical" href="https:\/\/eonaran\.github\.io\/teaching\/optimum-control-systems\/"/i);
 

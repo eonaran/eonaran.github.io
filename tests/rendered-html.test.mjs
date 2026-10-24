@@ -44,6 +44,8 @@ test("server-renders the academic website and social metadata", async () => {
   assert.match(html, /Journal articles and preprints/);
   assert.match(html, /IEEE International Conference on Acoustics, Speech and Signal Processing/);
   assert.match(html, /Rutgers University, Applied and Computational Math Seminar/);
+  assert.match(html, /Joint Mathematics Meetings, Chicago — January 12/);
+  assert.match(html, /<span>2027<\/span><p>Joint Mathematics Meetings, Chicago — January 12<\/p>/);
   assert.match(html, /Supercritical ball-like growth/);
   assert.match(html, /Mathematics of Change, Part II \(MATH 1080\)/);
   assert.match(html, /Optimum Control Systems \(ECE 553, MATH 595\)/);
