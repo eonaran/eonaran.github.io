@@ -3,6 +3,13 @@ import { SectionNavigation } from "./section-navigation";
 const journalPapers = [
   {
     year: "2026",
+    title: "Efficiency–Complexity Tradeoff and Constrained Percolation",
+    authors: "Yuliy Baryshnikov and Efe Onaran",
+    venue: "Submitted",
+    links: [["arXiv", "https://arxiv.org/pdf/2610.33864"]],
+  },
+  {
+    year: "2026",
     title: "Ising disks: topology preserving Glauber dynamics",
     authors: "Yuliy Baryshnikov and Efe Onaran",
     venue: "Journal of Applied and Computational Topology 10(3), Paper 16",
