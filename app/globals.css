@@ -73,6 +73,12 @@ nav a { color: #444; font-size: .88rem; }
 .research-video-grid figcaption { margin-top: 10px; color: var(--muted); font-size: .9rem; line-height: 1.5; }
 .research-video-grid figcaption strong { color: var(--text); }
 
+.percolation-illustration { display: block; width: 100%; border: 0; margin: 24px 0 12px; }
+.percolation-notes { margin: 14px 0 42px; color: var(--muted); font-size: .9rem; }
+.percolation-notes summary { color: var(--text); cursor: pointer; }
+.percolation-notes p { margin: 12px 0 0; }
+.percolation-notes summary:focus-visible { outline: 2px solid #b36b00; outline-offset: 3px; }
+
 .course-page { min-height: calc(100vh - 155px); padding: 54px 0 72px; }
 .back-link { display: inline-block; margin-bottom: 28px; font-size: .9rem; }
 .course-page article { max-width: 760px; }

@@ -1,4 +1,5 @@
 import { SectionNavigation } from "./section-navigation";
+import { PercolationIllustration } from "./percolation-illustration";
 
 const journalPapers = [
   {
@@ -237,6 +238,35 @@ export default function Home() {
 
         <section className="content-section" id="research">
           <h2>Research</h2>
+          <h3>Constrained percolation</h3>
+          <p>
+            In <a href="https://arxiv.org/abs/2610.33864" target="_blank" rel="noreferrer"><em>Efficiency–Complexity Tradeoff and Constrained Percolation</em></a>,
+            written with <a href="https://ymb.web.illinois.edu/" target="_blank" rel="noreferrer">Yuliy Baryshnikov</a>,
+            we study how restricting the permitted paths changes the minimum travel
+            cost in directed first-passage percolation. The illustration below
+            restricts the number of turns: allowing more turns gives a larger
+            family of paths from which to choose.
+          </p>
+          <p>
+            Each edge has an independent exponential cost with mean one. Move the
+            slider or select either plot to see the least-cost permitted path in
+            this fixed environment. Both plots show cost per step; the second uses
+            the logarithm of the number of permitted paths per step as the measure
+            of complexity.
+          </p>
+          <PercolationIllustration />
+          <details className="percolation-notes">
+            <summary>About the model and the plots</summary>
+            <p>
+              Paths run east and north from (0, 0) to (90, 54), so every path has
+              144 steps. The maximum is 108 turns, achieved by separating all
+              54 north steps with east steps and starting and ending east. Both
+              plots include every turn budget up to this maximum. A flat portion
+              means that allowing more turns no longer lowers the minimum cost.
+            </p>
+          </details>
+
+          <h3>Ising disks</h3>
           <p>
             In the paper <a href="https://doi.org/10.1007/s41468-026-00248-w" target="_blank" rel="noreferrer"><em>Ising disks: topology preserving Glauber dynamics</em></a>,
             written with <a href="https://ymb.web.illinois.edu/" target="_blank" rel="noreferrer">Yuliy Baryshnikov</a>,
