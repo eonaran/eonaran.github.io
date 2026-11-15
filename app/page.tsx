@@ -6,7 +6,7 @@ const journalPapers = [
     year: "2026",
     title: "Efficiency–Complexity Tradeoff and Constrained Percolation",
     authors: "Yuliy Baryshnikov and Efe Onaran",
-    venue: "Submitted",
+    venue: "Under peer review",
     links: [["arXiv", "https://arxiv.org/abs/2610.33864"]],
   },
   {
